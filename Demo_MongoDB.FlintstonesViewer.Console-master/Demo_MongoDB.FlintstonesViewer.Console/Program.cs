@@ -118,5 +118,38 @@ namespace Demo_FileIO_NTier
 
             return characters;
         }
+
+        private static List<Character> GenerateListOfPeople()
+        {
+            List<Character> characters = new List<Character>()
+            {
+                new Character()
+                {
+                    Id = 1,
+                    LastName = "Avery",
+                    FirstName = "Miller",
+                    Address = "301 Cedar Street",
+                    City = "Kalkaska",
+                    State = "MI",
+                    Zip = "49646",
+                    Age = 16,
+                    Gender = Character.GenderType.MALE
+                },
+                new Character()
+                {
+                    Id = 2,
+                    LastName = "Wyatt",
+                    FirstName = "Miller",
+                    Address = "303 Cedar Street",
+                    City = "Kalkaska",
+                    State = "MI",
+                    Zip = "49646",
+                    Age = 20,
+                    Gender = Character.GenderType.MALE
+                }
+            };
+
+            return characters;
+        }
     }
 }
