@@ -20,7 +20,7 @@ namespace Demo_FileIO_NTier
             // Required to test the MongoDB data service
             // refresh MongoDB collection 
             //
-            dataService.WriteAll(GenerateListOfCharacters());
+            dataService.WriteAll(GenerateListOfPeople());
 
             CharacterBLL characterBLL = new CharacterBLL(dataService);
             Presenter presenter = new Presenter(characterBLL);

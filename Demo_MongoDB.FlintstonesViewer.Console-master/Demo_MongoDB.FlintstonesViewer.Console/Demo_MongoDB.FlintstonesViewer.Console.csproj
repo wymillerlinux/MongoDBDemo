@@ -79,5 +79,8 @@
   <ItemGroup>
     <None Include="ReadMe.md" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dockerfile" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

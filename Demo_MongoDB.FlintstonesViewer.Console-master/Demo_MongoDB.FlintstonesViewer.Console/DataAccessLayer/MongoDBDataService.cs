@@ -28,7 +28,7 @@ namespace Demo_FileIO_NTier.DataAccessLayer
             {
                 var client = new MongoClient(_connectionString);
                 IMongoDatabase database = client.GetDatabase("cit255");
-                IMongoCollection<Character> characterList = database.GetCollection<Character>("flintstone_characters");
+                IMongoCollection<Character> characterList = database.GetCollection<Character>("my_characters");
 
                 characters = characterList.Find(Builders<Character>.Filter.Empty).ToList();
             }
@@ -50,7 +50,7 @@ namespace Demo_FileIO_NTier.DataAccessLayer
             {
                 var client = new MongoClient(_connectionString);
                 IMongoDatabase database = client.GetDatabase("cit255");
-                IMongoCollection<Character> characterList = database.GetCollection<Character>("flintstone_characters");
+                IMongoCollection<Character> characterList = database.GetCollection<Character>("my_characters");
 
                 //
                 // delete all documents in the collection to reset the collection
